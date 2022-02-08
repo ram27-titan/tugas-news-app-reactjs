@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar1 from './component/navbar';
 import Search1 from './component/search';
 import Card1 from './component/card';
-import { Audio } from 'react-loader-spinner';
+
 export default class Main extends React.Component {
   constructor() {
     super();
@@ -39,7 +39,6 @@ export default class Main extends React.Component {
   render() {
     return (
       <div>
-        <Audio heigth="100" width="100" color="grey" ariaLabel="loading" />
         <Navbar1 />
         <Search1 handleSubmit={this.handleSubmit} handleChange={this.handleChange} />
         <Card1 news={this.state.news} />
